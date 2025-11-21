@@ -62,8 +62,7 @@ Learn more about the Foundry Agent Service in the [Foundry Agent Service documen
 
 5. Activate the virtual environment by running the following command:
 
-    ```shell
-    .\.venv\Scripts\activate
+    source .venv/bin/activate
     ```
 
 6. Install the required packages by running the following command:
@@ -77,6 +76,17 @@ Learn more about the Foundry Agent Service in the [Foundry Agent Service documen
     ```shell
     code .
     ```
+
+**Quick: Generate a sales pie chart**
+
+Run the commands below from the workshop folder (`src/python/workshop`) after the virtual environment is activated.
+
+```bash
+source .venv/bin/activate
+python plot_sales_pie.py --group-by main_category --year 2023
+```
+
+The script saves the generated image to `shared/files/` as `sales_pie_<group>_<year or all>.png` (for example `shared/files/sales_pie_main_category_2023.png`).
 
 ## Configure the Environment
 
